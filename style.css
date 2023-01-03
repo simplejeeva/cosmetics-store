@@ -1,0 +1,126 @@
+
+@media (min-width: 768px) {
+    .heading {
+      font-size: 4rem;
+      padding: 4rem 0;
+    }
+    .container {
+      margin: 6rem auto;
+    }
+  
+    .card {
+      pointer-events: auto;
+      
+    }
+  
+    .product-description {
+      display: none;
+    }
+  
+    .card:hover,
+    .card:active {
+      
+      box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
+    }
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .backdrop {
+    position: fixed;
+    display: none;
+    justify-items: center;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+
+  }
+  
+  .backdrop.display {
+    display: block;
+  }
+  
+  .modal {
+    position: fixed;
+    left: 50%;
+    height: 80%;
+    overflow-y: scroll;
+     width: 80%;
+     max-width: 80ch;
+    display: none;
+    z-index: 200;
+    background: white;
+    display: block;
+    justify-items: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal.display {
+    display: block;
+    justify-items: center;
+  }
+  
+  .modal-product-image {
+    display: inline-block;
+    justify-items: center;
+    width: 10%;
+    vertical-align: middle;
+  }
+  
+  .modal-product-image img {
+    display: block;
+    justify-items: center;
+    width: 10%;
+    max-height: 10px;
+    padding: 1rem;
+    
+  }
+  
+  .modal-product-info {
+    display: inline-block;
+    width: 50%;
+    padding: 2rem;
+    vertical-align: top;
+  }
+  
+  .modal .product-description {
+    display: block;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+  }
+  .product.image{
+  height: 10px;
+  display: flex;
+  justify-items: center;
+  }
+ 
+  
